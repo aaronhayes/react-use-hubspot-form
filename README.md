@@ -18,7 +18,7 @@ $ yarn add @aaronhayes/react-use-hubspot-form
 
 ## Usage
 
-```TypeScriptReact
+```TypeScript
 import React from 'react';
 
 import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
@@ -33,7 +33,7 @@ const MyPage = () => {
     return (
         <div>
             <h1>Embed Form Below</h1>
-            <div id="my-hubspot-form" />
+            <div id="my-hubspot-form"></div>
         </div>
     )
 }
