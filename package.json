@@ -46,9 +46,7 @@
   "engines": {
     "node": ">=10.16"
   },
-  "dependencies": {
-    "lodash.debounce": "^4.0.8"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
     "@bitjson/typedoc": "^0.15.0-0",
