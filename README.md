@@ -18,13 +18,17 @@ $ yarn add @aaronhayes/react-use-hubspot-form
 
 ## Usage
 
-```TypeScript
+```TypeScriptReact
 import React from 'react';
 
 import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
 
 const MyPage = () => {
-    const { loaded, error, formCreated } = useScrollSpy();
+    const { loaded, error, formCreated } = useHubspotForm({
+        poralId: 'XXXXXXX',
+        formId: 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
+        target: '#my-hubspot-form'
+    });
 
     return (
         <div>
