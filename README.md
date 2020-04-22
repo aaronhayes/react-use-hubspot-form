@@ -25,7 +25,7 @@ import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
 
 const MyPage = () => {
     const { loaded, error, formCreated } = useHubspotForm({
-        poralId: 'XXXXXXX',
+        portalId: 'XXXXXXX',
         formId: 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
         target: '#my-hubspot-form'
     });
