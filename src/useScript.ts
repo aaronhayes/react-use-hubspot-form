@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // Hook
 const cachedScripts: string[] = [];
 
-function useScript(src: string) {
-  const [loaded, setLoaded] = useState();
-  const [error, setError] = useState();
+function useScript(src: string): boolean[] {
+  const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState(false);
 
-  // @ts-ignore 7030
+  // @ts-ignore
   useEffect(() => {
     // If cachedScripts array already includes src that means another instance ...
     // ... of this hook already loaded this script, so no need to load again.
@@ -18,7 +18,7 @@ function useScript(src: string) {
       cachedScripts.push(src);
 
       // Create script
-      let script = document.createElement('script');
+      const script = document.createElement('script');
       script.src = src;
       script.async = true;
 
@@ -31,7 +31,9 @@ function useScript(src: string) {
       const onScriptError = () => {
         // Remove from cachedScripts we can try loading again
         const index = cachedScripts.indexOf(src);
-        if (index >= 0) cachedScripts.splice(index, 1);
+        if (index >= 0) {
+          cachedScripts.splice(index, 1);
+        }
         script.remove();
 
         setLoaded(true);
