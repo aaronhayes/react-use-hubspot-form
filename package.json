@@ -68,7 +68,7 @@
     "react-scroll": "^1.7.14",
     "rollup": "^1.26.2",
     "rollup-plugin-typescript2": "^0.25.2",
-    "standard-version": "^7.0.0",
+    "standard-version": "^8.0.1",
     "trash-cli": "^3.0.0",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
