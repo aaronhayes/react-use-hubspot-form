@@ -7,7 +7,6 @@ function useScript(src: string): boolean[] {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
-  // @ts-ignore
   useEffect(() => {
     // If cachedScripts array already includes src that means another instance ...
     // ... of this hook already loaded this script, so no need to load again.
