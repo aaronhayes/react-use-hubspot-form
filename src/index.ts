@@ -14,8 +14,6 @@ interface UseHubSpotFormResponse {
   readonly formCreated: boolean;
 }
 
-const windowWithHubspot: WindowWithHubspot = window;
-
 /**
  * Inputs based on HubSpot docs: https://legacydocs.hubspot.com/docs/methods/forms/advanced_form_options
  */
@@ -103,9 +101,12 @@ export const useHubspotForm = (
   const [formCreated, setFormCreated] = useState(false);
 
   useEffect(() => {
-    if (loaded && windowWithHubspot.hbspt && !formCreated) {
-      windowWithHubspot.hbspt.forms.create(props);
-      setFormCreated(true);
+    if ((process as any).browser) {
+      const windowWithHubspot: WindowWithHubspot = window;
+      if (loaded && windowWithHubspot.hbspt && !formCreated) {
+        windowWithHubspot.hbspt.forms.create(props);
+        setFormCreated(true);
+      }
     }
   }, [loaded, formCreated, setFormCreated]);
 
