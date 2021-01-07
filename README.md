@@ -21,7 +21,7 @@ $ yarn add @aaronhayes/react-use-hubspot-form
 ```TypeScript
 import React from 'react';
 
-import useHubspotForm from '@aaronhayes/react-use-hubspot-form';
+import { useHubspotForm } from '@aaronhayes/react-use-hubspot-form';
 
 const MyPage = () => {
     const { loaded, error, formCreated } = useHubspotForm({
