@@ -87,7 +87,7 @@ interface UseHubSpotFormProps {
   /**
    * Callback that executes after form is validated, just before the data is actually sent. This is for any logic that needs to execute during the submit. Any changes will not be validated. Takes the jQuery form object as the argument: onFormSubmit($form)
    */
-  readonly onFormSubmit?: () => any;
+  readonly onFormSubmit?: ($form) => any;
   /**
    * Callback the data is actually sent.This allows you to perform an action when the submission is fully complete, such as displaying a confirmation or thank you message.
    */
