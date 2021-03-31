@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.2...v1.2.3) (2021-03-31)
+
+### Bug Fixes
+
+- **types:** Add \$form to onFormReady and onFormSubmit ([e22e957](https://github.com/aaronhayes/react-use-hubspot-form/commit/e22e957c4364410bc5784d30b0b561d60c6f657c))
+
 ### [1.2.2](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.1...v1.2.2) (2020-11-10)
 
 ### Bug Fixes
