@@ -106,7 +106,7 @@ export const useHubspotForm = (
   const [formCreated, setFormCreated] = useState(false);
 
   useEffect(() => {
-    if ((process as any).browser) {
+    if (typeof window !== 'undefined' && window) {
       const windowWithHubspot: WindowWithHubspot = window;
       if (loaded && windowWithHubspot.hbspt && !formCreated) {
         windowWithHubspot.hbspt.forms.create(props);
