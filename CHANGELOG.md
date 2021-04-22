@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.4...v1.2.5) (2021-04-22)
+
+### Bug Fixes
+
+- process is not defined ([8a29714](https://github.com/aaronhayes/react-use-hubspot-form/commit/8a297148e396a8182cad2f98175f0640470d63e4))
+
 ### [1.2.4](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.3...v1.2.4) (2021-03-31)
 
 ### [1.2.3](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.2...v1.2.3) (2021-03-31)
