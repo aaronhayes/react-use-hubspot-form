@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { HubSpotFormLocale } from './hubspot-form-locale.enum';
-import useScript from './useScript';
+import HubspotProvider, {
+  useHubspotContext,
+  HubspotContextProps
+} from './HubspotProvider';
 
 interface WindowWithHubspot extends Window {
   // TODO improve typings
@@ -102,7 +105,7 @@ interface UseHubSpotFormProps {
 export const useHubspotForm = (
   props: Readonly<UseHubSpotFormProps>
 ): UseHubSpotFormResponse => {
-  const [loaded, error] = useScript('https://js.hsforms.net/forms/v2.js');
+  const { loaded, error } = useHubspotContext();
   const [formCreated, setFormCreated] = useState(false);
 
   useEffect(() => {
@@ -117,3 +120,5 @@ export const useHubspotForm = (
 
   return { loaded, formCreated, error };
 };
+
+export { HubspotProvider, useHubspotContext, HubspotContextProps };

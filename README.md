@@ -16,6 +16,23 @@ $ npm install --save @aaronhayes/react-use-hubspot-form
 $ yarn add @aaronhayes/react-use-hubspot-form
 ```
 
+## Getting Started
+
+Wrap your application with `HubspotProvider`. This will add [Hubspot script](https://js.hsforms.net/forms/v2.js) to the head of your document.
+
+```TypeScript
+import React from 'react';
+
+import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
+
+const MyApp = () => (
+    <HubspotProvider>
+        <MyPage />
+    </HubspotProvider>
+)
+
+```
+
 ## Usage
 
 ```TypeScript
