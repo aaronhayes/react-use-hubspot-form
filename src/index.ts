@@ -20,7 +20,7 @@ interface UseHubSpotFormResponse {
 /**
  * Inputs based on HubSpot docs: https://legacydocs.hubspot.com/docs/methods/forms/advanced_form_options
  */
-interface UseHubSpotFormProps {
+export interface UseHubSpotFormProps {
   readonly portalId: string;
   readonly formId: string;
   readonly target: string;
