@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.0.1](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.6...v2.0.1) (2021-08-08)
 
-### [1.2.7](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.6...v1.2.7) (2021-08-08)
+- Breaking changes. Introduces `HubspotProvider`. See README for more info.
 
 ### [1.2.6](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.5...v1.2.6) (2021-06-24)
 
