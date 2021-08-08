@@ -2,8 +2,8 @@ import React, { createContext, useContext } from 'react';
 import useScript from './useScript';
 
 export interface HubspotContextProps {
-  loaded: boolean; // Is Hubspot script loaded
-  error: boolean; // Is Hubspot failed to loaded
+  readonly loaded: boolean; // Is Hubspot script loaded
+  readonly error: boolean; // Is Hubspot failed to loaded
 }
 
 export const HubspotContext = createContext<HubspotContextProps>({

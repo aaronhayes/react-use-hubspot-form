@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { HubSpotFormLocale } from './hubspot-form-locale.enum';
 import HubspotProvider, {
-  useHubspotContext,
-  HubspotContextProps
+  HubspotContextProps,
+  useHubspotContext
 } from './HubspotProvider';
 
 interface WindowWithHubspot extends Window {
