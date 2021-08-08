@@ -56,3 +56,9 @@ const MyPage = () => {
 }
 
 ```
+
+## Breaking Changes
+
+## 2.0.0
+
+- Introduction of the `HubspotProvider` component. This needs to be included in your App for `useHubspotForm` to work.
