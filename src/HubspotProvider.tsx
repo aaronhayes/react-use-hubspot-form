@@ -13,9 +13,23 @@ export const HubspotContext = createContext<HubspotContextProps>({
 
 export const useHubspotContext = () => useContext(HubspotContext);
 
-const HubspotProvider = ({ children }) => {
-  // Attach hubspot script to the head of the document
-  const [loaded, error] = useScript('https://js.hsforms.net/forms/v2.js');
+interface HubspotProviderProps {
+  readonly async?: boolean;
+  readonly addToHead?: boolean;
+  readonly children: React.ReactNode;
+}
+
+const HubspotProvider = ({
+  async,
+  addToHead,
+  children
+}: HubspotProviderProps) => {
+  // Attach hubspot script to the document
+  const [loaded, error] = useScript(
+    'https://js.hsforms.net/forms/v2.js',
+    async,
+    addToHead
+  );
 
   return (
     <HubspotContext.Provider value={{ loaded, error }}>

@@ -3,7 +3,11 @@ import { useEffect, useState } from 'react';
 // Hook
 const cachedScripts: string[] = [];
 
-function useScript(src: string): boolean[] {
+function useScript(
+  src: string,
+  async: boolean = true,
+  addToHead: boolean = false
+): boolean[] {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
@@ -19,7 +23,7 @@ function useScript(src: string): boolean[] {
       // Create script
       const script = document.createElement('script');
       script.src = src;
-      script.async = true;
+      script.async = async;
 
       // Script event listener callbacks for load and error
       const onScriptLoad = () => {
@@ -42,8 +46,10 @@ function useScript(src: string): boolean[] {
       script.addEventListener('load', onScriptLoad);
       script.addEventListener('error', onScriptError);
 
-      // Add script to document body
-      document.body.appendChild(script);
+      // Add script to document head if required, otherwise to the body
+      addToHead
+        ? document.head.appendChild(script)
+        : document.body.appendChild(script);
 
       // Remove event listeners on cleanup
       return () => {
