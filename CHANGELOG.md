@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/aaronhayes/react-use-hubspot-form/compare/v2.0.1...v2.1.0) (2021-09-21)
+
+### Features
+
+- allow for synchronous loading and appending to head ([d66a4d2](https://github.com/aaronhayes/react-use-hubspot-form/commit/d66a4d25cba98bef67608a05e108c3b289dfd0f8))
+
 ### [2.0.1](https://github.com/aaronhayes/react-use-hubspot-form/compare/v1.2.6...v2.0.1) (2021-08-08)
 
 - Breaking changes. Introduces `HubspotProvider`. See README for more info.
