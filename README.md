@@ -59,6 +59,10 @@ const MyPage = () => {
 
 ## Breaking Changes
 
-## 2.0.0
+### 2.0.0
 
 - Introduction of the `HubspotProvider` component. This needs to be included in your App for `useHubspotForm` to work.
+
+## Support
+
+If you feel like sending some sats to aaron@zbd.gg my [Lightning Address](https://zbd.gg/aaron/) it would be much appreciated.
