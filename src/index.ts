@@ -121,4 +121,9 @@ export const useHubspotForm = (
   return { loaded, formCreated, error };
 };
 
-export { HubspotProvider, useHubspotContext, HubspotContextProps };
+export {
+  HubspotProvider,
+  useHubspotContext,
+  HubspotContextProps,
+  HubSpotFormLocale
+};
