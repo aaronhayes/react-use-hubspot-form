@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/aaronhayes/react-use-hubspot-form/compare/v2.1.0...v2.1.1) (2022-02-05)
+
+### Bug Fixes
+
+- HubSpotFormLocale type not exported for use in locale prop ([70871c5](https://github.com/aaronhayes/react-use-hubspot-form/commit/70871c56806df5a452593621199ecf87f160c403))
+
 ## [2.1.0](https://github.com/aaronhayes/react-use-hubspot-form/compare/v2.0.1...v2.1.0) (2021-09-21)
 
 ### Features
