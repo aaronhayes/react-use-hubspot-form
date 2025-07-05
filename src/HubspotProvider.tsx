@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, ReactElement, useContext } from 'react';
 import useScript from './useScript';
 
 export interface HubspotContextProps {
@@ -23,7 +23,7 @@ const HubspotProvider = ({
   async,
   addToHead,
   children
-}: HubspotProviderProps) => {
+}: HubspotProviderProps): ReactElement => {
   // Attach hubspot script to the document
   const [loaded, error] = useScript(
     'https://js.hsforms.net/forms/v2.js',
