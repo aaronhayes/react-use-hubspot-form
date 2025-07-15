@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://github.com/aaronhayes/react-use-hubspot-form/compare/v2.1.1...v2.1.2) (2025-07-15)
+
+### Bug Fixes
+
+- Add return type to HubspotProvider to prevent JSX usage in build ([ca6393f](https://github.com/aaronhayes/react-use-hubspot-form/commit/ca6393fd9f31008b3ee8713c8d53b3adebb5fd40))
+
 ### [2.1.1](https://github.com/aaronhayes/react-use-hubspot-form/compare/v2.1.0...v2.1.1) (2022-02-05)
 
 ### Bug Fixes
