@@ -24,6 +24,7 @@ export interface UseHubSpotFormProps {
   readonly portalId: string;
   readonly formId: string;
   readonly target: string;
+  readonly region?: string;
   /**
    * URL to which the form will redirect upon a successful form completion. Cannot be used with inlineMessage.
    */
