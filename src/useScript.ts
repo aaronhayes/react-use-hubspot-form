@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const cachedScripts: string[] = [];
 
 function useScript(
-  src: string,
+  src: string | null,
   async: boolean = true,
   addToHead: boolean = false
 ): boolean[] {
@@ -12,6 +12,13 @@ function useScript(
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    // If src is null, don't load anything
+    if (!src) {
+      setLoaded(true);
+      setError(false);
+      return;
+    }
+
     // If cachedScripts array already includes src that means another instance ...
     // ... of this hook already loaded this script, so no need to load again.
     if (cachedScripts.includes(src)) {
